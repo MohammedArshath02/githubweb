@@ -1,0 +1,76 @@
+.row{
+/* 
+    height: 100%;
+    width: 100%; */
+    
+}
+.im-1{
+    height: 425px;    
+}
+body{
+    width: 80%;
+    margin: 10px auto;
+    background-color: black;
+    color: white;
+    background-image: url(https://tamilbusinesstribe.in/wp-content/uploads/2023/11/63fbd16d300f0c782da6c1e1_Profile-Grid-Lines-4.svg);
+    background-position: center;
+    background-repeat: repeat;
+}
+/* .co-1{
+    margin-top: 10px;
+    padding: 10px 30px 10px 0px;
+    background-color:#37ED81;
+    border-radius: 5px 5px 5px 5px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+    font-weight: 600;
+    color: black;
+}
+
+.h2-1{
+    background:-webkit-linear-gradient(180deg, #ff114d 0%, #ff592d 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 0px 0px 0px ;
+}
+.u-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 2rem;
+}
+.l-1{
+    margin: 10px 0px 0px 0px ;
+    list-style-type: none;
+    font-size: large;
+    font-weight: 700;
+    
+}
+.l-1::before{
+    content: '\2713';
+    color: red;
+    padding: 0px 10px 0px 0px ;
+    font-weight: 600;
+    font-size: x-large;
+} */
+.f-wrap{
+    flex-wrap: wrap;
+    display: flex;
+
+
+}
+.main1-1{
+    order: 2;
+    flex: 0.75%;
+    outline: 1px solid red;
+}
+.optional-0{
+    order: 1;
+    flex: 0.25%;
+    outline: 1px solid wheat;
+}
+.main2-1{
+    order: 3;
+    flex: 0.75;
+    outline: 1px solid blue;
+}

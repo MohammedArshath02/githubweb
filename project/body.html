@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy-call</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="npm i bootstrap-icons">
+    <link rel="stylesheet" href="./body.css">
+</head>
+<!-- <style>
+    body{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 70%;
+    background-color: black;
+    color: white;
+    background-image: url(https://tamilbusinesstribe.in/wp-content/uploads/2023/11/63fbd16d300f0c782da6c1e1_Profile-Grid-Lines-4.svg);
+    background-position: center;
+    background-repeat: repeat;
+
+}
+.cond-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.con-1{
+    color: black;
+    border: 2px solid  #37ED81;
+    background-color:  #37ED81;
+    margin-top: 5px;
+    padding: 6px 20px 6px 20px;
+    border-radius: 5px 5px 5px 5px;
+    font-weight: 700;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.spa-1{
+    background: -webkit-linear-gradient(360deg, #ff114d 0%, #ff592d 74%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+}
+.h1-1{
+    font-family: "IBM Plex Sans Condensed", Sans-serif ;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+}
+.p-1{
+    font-size: large;
+    text-align: center;
+}
+.im-1{
+    height: 425px;    
+}
+.co-1{
+    margin-top: 10px;
+    padding: 10px 30px 10px 0px;
+    background-color:#37ED81;
+    border-radius: 5px 5px 5px 5px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:large;
+    font-weight: 600;
+    color: black;
+}
+
+
+.h2-1{
+    background:-webkit-linear-gradient(180deg, #ff114d 0%, #ff592d 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 0px 0px 0px ;
+}
+.u-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-star;
+    line-height: 2rem;
+}
+.l-1{
+    margin: 10px 0px 0px 0px ;
+    list-style-type:none;
+    font-size: large;
+    font-weight: 700;
+    
+}
+.l-2{
+    margin: 52px 0px 0px 0px ;
+    list-style-type: none;
+    font-size: large;
+    font-weight: 700;
+    line-height: 2rem;
+    /* letter-spacing: 2px; */
+}
+.u-2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 1.4rem;
+
+}
+.l-1::before,.l-2::before{
+    content: '\2713';
+    color: red;
+    padding: 0px 10px 0px 0px ;
+    font-weight: 600;
+    font-size: x-large;
+}
+@keyframes animation1{
+    10%{background-color: #f79533;}
+    20%{background-color: #f37055;}
+    30%{background-color: #ef4e7b ;}
+    50%{background-color: #a166ab;}
+    70%{background-color: #5073b8;}
+    80%{background-color: #1098ad;}
+    90%{background-color: #07b39b;}
+    100%{background-color: #6fba82;}
+}
+@keyframes shake {
+    0% { transform: translate(10px, 10px) rotate(1deg); }
+    50% { transform: translate(10px, 10px) rotate(-1deg); }
+    100% { transform: translate(10px, 10px) rotate(1deg); }
+}
+
+.ani-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    /* animation-name: animation1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  */
+
+    
+
+}
+.p-2{
+    /* animation-name: shake;
+    animation-duration: 0.5ms;
+    animation-iteration-count: infinite; */
+
+    padding: 10px 10px 10px 10px;
+    animation-name: animation1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 10px 10px 10px 10px ;
+    text-align: center;
+    text-transform: uppercase;
+    color: black; 
+    font-weight:900;
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: white;
+    line-height: 50px;
+
+}
+.h5-1{
+    
+    font-weight:1px;
+    font-size:large;
+    letter-spacing: -0px;
+    font-family: "Roboto", Sans-serif;
+    margin-top: 10px;
+    text-transform:none;
+}
+#col-1{
+    margin-top: 50px;
+}
+.box-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo-slides{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px 0px 0px 0px ;
+    
+}
+
+.logo-1{
+    overflow: hidden;
+    padding: 30px 30px 25px 30px;
+    border-radius: 5px;
+    background: white;
+    white-space: nowrap;
+
+
+}
+.logo-1 img{
+    animation: 30s slide infinite linear;
+    margin: 0 40px;
+}
+
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.h2-2{
+    margin-top: 50px;
+    font-family: "IBM Plex Sans Condensed", Sans-serif;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bolder;
+    font-size: 2rem;
+    
+}
+.h5-2{
+    font-family: "IBM Plex Sans", Sans-serif;
+    text-align: center;
+    margin-top: 10px ;
+}
+#co-2{
+    padding: 25px 10px 25px 10px;
+    background: #262626;
+    border-radius: 5px 5px 5px 5px ;
+    font-family: "Poppins", Sans-serif;
+    font-size:larger;
+    font-weight: 500 ;
+
+}
+.col{
+    margin: 10px 10px;
+}
+#cond-1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.in-1{
+    top: 0;
+    bottom: 0;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.p-3{
+    padding: 7px 50px 7px 50px;
+    animation-name: animation1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 10px 10px 10px 10px ;
+    text-align: center;
+    text-transform: uppercase;
+    color: black; 
+    font-weight:900;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: white;
+    line-height: 50px;
+
+}
+.h5-3{
+
+    font-weight:1px;
+    font-size:large;
+    letter-spacing: -0px;
+    font-family: "Roboto", Sans-serif;
+    margin-top: 10px;
+    text-transform:none;
+
+}
+#road-1{
+    margin-top: 40px;
+}
+.co-3{
+    padding: 0px 1px ;
+    border-radius: 7px 7px 7px 7px ;
+    font-size:x-large;
+    background: linear-gradient(to left,#09B5E2, #22EBA2, #22EBA2);
+    color: black;
+    text-align: center;
+    width: 100px;
+    font-weight:bold; 
+}
+#im-2{
+    width: 300px;
+}
+#p-4{
+    font-size:x-large;
+}
+#h2-3{
+    margin-top: 30px;
+    text-align: center;
+}
+.h2-4{
+    font-size: 40px;
+}
+.card-title{
+    font-weight: bold;
+}
+.l-3{
+    font-weight: lighter;
+}
+.card{
+    background-color: #262626;
+    color: white;
+}
+#cond-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#co-4{
+    margin-top: 10px;
+    background-color: #262626 ;
+    border-radius: 10px 10px 10px 10px ;
+}
+#col-3{
+    margin: 90px 30px 0px 10px ;
+}
+#co-5{
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px 20px 20px 30px;
+    padding: 20px 0px 30px 10px ;
+    width: 20%;
+}
+#ro-1{
+    background-color: #262626;
+    border-radius: 10px 10px ;
+    margin: 10px 5px 10px 50px;
+    
+}
+#ro-2{
+    border: 3px dotted red;
+    border-radius: 10px 10px ;
+    margin: 10px 40px 10px 0px;
+}
+#ul-1 li::before{
+    content: "\002B";
+    cursor: pointer;
+}
+
+@media screen and (max-width:680px){
+    body{
+        width: 100% 
+    }
+    
+    .logo-1 img{
+        margin: 0px;
+
+    }
+
+}    
+</style> -->
+<body>
+    <div class="cond-1">
+        <div class="con-1">2X Your Revenue in 90 Days</div>
+    </div>
+    <div class="cond-1">
+        <h2 class="h1-1">Using <span class="spa-1">Guerrilla Framework</span> With GCG Method Scale Your Business</h2>
+    </div>
+    <div class="cond-1">
+        <p class="p-1">Learn from people who have built million-dollar D2C brands and become part of a community of founder and pracitioners to grow fast</p>
+    </div>
+    <div class="container text-center">
+        <div class="row alien-item-start">
+            <div class="col">
+                <img class="im-1" src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/SAKTHI.webp" alt="pic-human">
+            </div>
+            <div class="col" id="col-1">
+                <div class="co-1"> 
+                    &#128339;	Duration - 90 days
+                </div>
+                <h2 class="h2-1">Core Learning</h2>
+                <ul class="u-1">
+                    <li class="l-1">Content Creation For Business</li>
+                    <li class="l-1">Funnels-Ecom / Landing / EBooks</li>
+                </ul>
+            </div>    
+            <div class="col" id="col-1">
+                <div class="co-1"> &#128197;  Start: 26Jan2024</div>
+                <ul class="u-2">
+                    <li class="l-2">Paid Ads</li>
+                    <li class="l-2">Implementing  The Proven Marketing Strategies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ani-1">
+        <div class="p-2">Apply Now <br>
+        <h5 class="h5-1">  Note : Appointment Confirmation Cannot Guarantee you Seat  </h5 >
+        </div>        
+    </div>
+    <div class="box-1">
+        <div class="logo-slides">
+            <div class="logo-1">
+                <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/6245aa1d0d0d5c2eced32858_YOURSTORY.svg" alt="you">
+                <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/6245aa7385bb3b15bb9f2601_Vector-14.svg" alt="fors">
+                <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/6245aa7325b6cc6c2f7f1c41_Vector-15.svg" alt="busines">
+                <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/6245aa1d0d0d5c2eced32858_YOURSTORY.svg" alt="you">  
+                <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/6245aa7385bb3b15bb9f2601_Vector-14.svg" alt="fors">
+
+            </div>
+            
+        </div>
+    </div>
+    <div class="cond-1">
+        <h2 class="h2-2">Are You <span class="spa-1">Experiencing</span> Any Of These <span class="spa-1">Pain ?</span> 🤕</h2>
+    </div>
+    <div class="cond-1">
+        <h5 class="h5-2">Then This 12-Week Gamified  Master Program is Exclusively Curated for You to Scale Your Business.</h5>
+    </div>
+    <div class="container text-center" id="cond-1">
+        <div class="row align-text-start" >
+            <div class="col" id="co-2"> <input type="checkbox" class="in-1">Do u feel that you are not generating enough Leads for your business</div>
+            <div class="col" id="co-2"><input type="checkbox"  class="in-1">Do u feel stagnant that the business is not growing for the past 6 months</div>
+        </div>
+        <div class="row align-text-start">
+            <div class="col" id="co-2"><input type="checkbox" class="in-1">Are you worried that there are no funnel strategies in place to run the business in auto pilot more</div>
+            <div class="col" id="co-2"><input type="checkbox" class="in-1"> There are no Proven Marketing strategies in place</div>
+        </div>
+        <div class="row align-text-start">
+            <div class="col-2"></div>
+            <div class="col"id="co-2"><input type="checkbox" class="in-1">There is no expert team to guide u in implementing the marketing process</div>
+            <div class="col-2"></div>
+        </div>
+    </div>
+    <div class="ani-1">
+        <div class="p-3">Yes ! Schedule Me An Appointment Now<br>
+        <h5 class="h5-3">  Note : Appointment Confirmation Cannot Guarantee you Seat  </h5 >
+        </div>        
+    </div>
+    <div class="cond-1" id="road-1">
+        <h2 class="h2-2" style="font-size: 35px;">Road Map To become<span class="spa-1"> Mass ஆன Marketer </span> 🤕</h2>
+    </div>
+    <div class="container" style="margin-top: 30px;">
+        <div class="row">
+            <div class="col">
+                <img id="im-2" src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/roadmap_1.png" alt="i">
+            </div>
+            <div class="col" >
+                <div class="co-3" style="margin-top: 20px;">
+                    Step 01
+                </div>
+                <h2  style="margin-top: 20px;">Let's Get <span class="spa-1">Started !</span></h2>
+                <p style="margin-top: 20px;" id="p-4">First,you'll receive a project brief and we'll se clear gola together.We'll make sure we understand what the client wants and what the landing page should do.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="co-3" style="margin-top: 20px;">
+                    Step 02
+                </div>
+                <h2  style="margin-top: 20px;">Time TO <span class="spa-1">Build</span></h2>
+                <p style="margin-top: 20px;" id="p-4">Now it's time to unlesh your creativity ! You'll use your desgin skills to build an awersome landing page. Make it look great and easy to use for the visitors.</p>
+            </div>
+            <div class="col">
+                <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/roadmap_2.png" alt="i2">
+            </div>
+
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img id="im-2" src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/roadmap_3-1.png" alt="i-3">
+                </div>
+                <div class="col" >
+                    <div class="co-3" style="margin-top: 20px;">
+                        Step 03
+                    </div>
+                    <h2  style="margin-top: 20px;">Get Feedback And<span class="spa-1">Improve</span></h2>
+                    <p style="margin-top: 20px;" id="p-4">Once you've bulid your landing page,it's time for some feedback .Our mentors and instructors will give you guidance on how to make it even better.Then'll point out what works and what needs improvement</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="co-3" style="margin-top: 20px;">
+                        Step 04
+                    </div>
+                    <h2  style="margin-top: 20px;">Get... Set...<span class="spa-1">Launch</span></h2>
+                    <p style="margin-top: 20px;" id="p-4">Now that your landing page is polihed and impressive,it's time to create your portfolio.This is where you can showcase your work to potential employers or clients .Int's like your design superpower that opens doors for exciting opportunities</p>
+                </div>
+                <div class="col">
+                    <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/roadmap_4-2.png" alt="i4">
+                </div>
+            </div>
+        </div>
+        <div class="cond-1" id="h2-3">
+            <h2 class="h2-4">Our Simple Yet <span class="spa-1">Effective Curriculum</span> </h2>
+        </div>
+        <div class="container" id="cond-2">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem; padding-bottom: 49px;" >
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Business-Basics.webp" class="card-img-top" alt="i0-1">
+                        <div class="card-body">
+                          <h5 class="card-title">Business Basics</h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">Working on BMC so that we will have a futuristic plan</li>
+                                <li class="l-3">Working on the KANO Model to improve our offerings</li>
+                                <li class="l-3">Business Metrics / Unit Economics / Marketing Metrics helps in measuring the goals</li>
+                            </ol>
+                          </p>
+                        
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Content-Creation-1.webp" class="card-img-top" alt="i0-2">
+                        <div class="card-body">
+                          <h5 class="card-title">Content Strategy</h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">Content strategy to help in leads organically using short-form videos</li>
+                                <li class="l-3">Content ideas Helping with 360+ Ideas personalized to your business</li>
+                                <li class="l-3" >How to shoot videos Action reels, speaking reels, transition reels</li>
+                            </ol>
+                          </p>
+                          
+                        </div>
+                      </div>
+                </div>
+                <div class="col"> <div class="card" style="width: 18rem; padding-bottom: 98px;" >
+                    <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Content-Creation.webp" class="card-img-top" alt="i0-3">
+                    <div class="card-body">
+                      <h5 class="card-title">Content Creation</h5>
+                      <p class="card-text">
+                        <ol>
+                            <li class="l-3">Creating 360 + Posters using Canva</li>
+                            <li class="l-3"> Using memes for business</li>
+                            <li class="l-3">Blogs using Ai</li>
+                            <li class="l-3">Creating SMM ready contents</li>
+                        </ol>
+                      </p>
+                    </div>
+                  </div></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem; ">
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Funnels.webp" class="card-img-top" alt="i1-1">
+                        <div class="card-body">
+                          <h5 class="card-title">Funnels</h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">Creating ECOM websites for your business </li>
+                                <li class="l-3">Helping with Landing pages for lead generation</li>
+                                <li class="l-3">Building your own Sales funnel</li>
+                                <li class="l-3">Ebook funnel for your business</li>
+                                <li class="l-3">Funnels for your coaching business</li>
+                            </ol>
+                          </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem; padding-bottom: 25px;">
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Paid-Traffic.webp" class="card-img-top" alt="i1-2">
+                        <div class="card-body">
+                          <h5 class="card-title">Paid Traffic</h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">Meta ads for Brand awareness campaigns</li>
+                                <li class="l-3"> Working with Value proposition for ads with Guerrilla Frame work</li>
+                                <li class="l-3">Running Lead ads</li>
+                                <li class="l-3">Running conversion campaigns</li>
+                                <li class="l-3">Running retargeting ads</li>
+                            </ol>
+                          </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem; padding-bottom: 73px;">
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Drip-Marketing.webp" class="card-img-top" alt="i1-3">
+                        <div class="card-body">
+                          <h5 class="card-title"Drip Marketing></h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">Using Whatsapp bulk effectively for business</li>
+                                <li class="l-3">Whatsapp api recommendation</li>
+                                <li class="l-3">EMAIL marketing auto emailers</li>
+                                <li class="l-3">VOice call Marketing</li>
+                                <li class="l-3">SMS Marketing</li>
+                            </ol>
+                          </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Thinking-Strategy.webp" class="card-img-top" alt="i2-1">
+                        <div class="card-body">
+                          <h5 class="card-title">Thinking Strategy</h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">How to think differently</li>
+                                <li class="l-3">7 Lateral thinking strategies </li>
+                                <li class="l-3">Other thinking techniques</li>
+                                <li class="l-3">6 Thinking Hats – Validation tool</li>
+                            </ol> 
+                        </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem; padding-bottom: 25px;">
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Guerrilla-Marketing.webp" class="card-img-top" alt="i2-2">
+                        <div class="card-body">
+                          <h5 class="card-title">Guerrilla Marketing</h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">1.How to go Viral</li>
+                                <li class="l-3"> 3 Steps in Guerrilla Marketing</li>
+                                <li class="l-3">Create ur Viral campaigns</li>
+                            </ol> 
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Marketing-Automation.webp" class="card-img-top" alt="i2-3">
+                        <div class="card-body">
+                          <h5 class="card-title">Marketing Automation</h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">1.Lead Automation</li>
+                                <li class="l-3">Zapier Integration </li>
+                                <li class="l-3">Instagram Automation</li>
+                                <li class="l-3">Whatsapp AUtomation</li>
+                                
+                            </ol> 
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem; padding-bottom: 24px;">
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Sales-Mastery.webp" class="card-img-top" alt="i3-1">
+                        <div class="card-body">
+                          <h5 class="card-title">Sales Mastery</h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">Prospect Qualification</li>
+                                <li class="l-3"> Right Questioning</li>
+                                <li class="l-3">Sales Script</li>
+                                <li class="l-3">Psychology of Sales</li>
+                            </ol> 
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;padding-bottom: 70px;">
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Dashboard-Management.webp" class="card-img-top" alt="i3-2">
+                        <div class="card-body">
+                          <h5 class="card-title">Dashboard Management</h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">Lead Management</li>
+                                <li class="l-3">Followup Process </li>
+                            </ol> 
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/Power-Of-Moments.webp" class="card-img-top" alt="i3-3">
+                        <div class="card-body">
+                          <h5 class="card-title">Power Of Moments</h5>
+                          <p class="card-text">
+                            <ol>
+                                <li class="l-3">Create Peaks in you product / Service</li>
+                                <li class="l-3">Collect feedback </li>
+                                <li class="l-3">Implement Power Of Moments in your business</li>
+                            </ol> 
+                        </p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ani-1" style="margin-top: 60px;">
+
+            <div class="p-3">Yes ! Schedule Me An Appointment Now<br>
+            <h5 class="h5-3">  Note : Appointment Confirmation Cannot Guarantee you Seat  </h5 >
+            </div>        
+        </div>
+        <div class="cond-1" style="margin-top: 150px;">
+            <h1>What 6000+<span class="spa-1">Learners Say</span> 😊 →</h1>
+        </div>
+        <div class="container" style="margin-top: 50px;" >
+            <div class="row">
+                <div class="col" style="margin: -10px -10px;" >
+                    <img style="width: 350px;" src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/6.webp" alt="">
+                </div>
+                <div class="col" style="margin: -10px -10px;">
+                    <img style="width: 350px;" src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/5.webp" alt="">
+                </div>
+                <div class="col" style="margin: -10px -10px;">
+                    <img  style="width: 350px;"src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/4.webp" alt="">
+                </div>
+            </div>
+            <div class="row" >
+                <div class="col" style="margin: 30px -90px -5px -10px;">
+                    <img style="width: 350px;" src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/3.webp" alt="">
+                </div>
+                <div class="col"  style="margin: 30px -100px -5px -24px ">
+                    <img style="width: 350px;" src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/2.webp" alt="">
+                </div>
+                <div class="col"  style="margin:30px -110px -5px -15px  ">
+                    <img  style="width: 350px;"src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/1.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="cond-1" style="margin-top: 80px;">
+            <h1>Meet Your <span class="spa-1">Mentor</span></h1>
+        </div>
+        <div class="container" id="co-4">
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://tamilbusinesstribe.in/wp-content/uploads/2023/11/SAKTHI.webp" alt="" width="250px" style="border-radius: 50%; margin: 30px 0px 0px 90px;" >
+                </div>
+                <div class="col">
+                    <div id="col-3">
+                      <h1 style="font-weight: bolder;">Sakthivel Pannerselvam</h1>
+                      <h3>–Chief Marketing Ninja</h3>
+                       <p style="font-size: 25px;">Author | Guerrilla Marketter | Serial Entrepreneur</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3" id="co-5" >
+                    <h1>15+ <span><img style="background-color: red; width: 40px; margin-left: 50px; margin-bottom: 10px; border-radius: 50%;" src="https://img.icons8.com/?size=80&id=VnrZRRm0HTOF&format=png" alt=""></span></h1>
+                    <p>Years Of Experience In Training And Coaching</p>
+                </div>
+                <div class="col-3" id="co-5">
+                    <h1>6k+<span><img style="background-color: red; width: 40px; margin-left: 50px; border-radius: 50%;" src="https://img.icons8.com/?size=50&id=37722&format=png" alt=""></span></h1>
+                    <p> Entrepreneurs and Business Owners trained</p>
+                </div>
+                <div class="col-3" id="co-5">
+                   <h1>150+<span><img style="background-color: red; width: 40px; margin-left: 50px; border-radius: 50%;" src="https://img.icons8.com/?size=30&id=gwV48t0Jvqy7&format=png" alt=""></span></h1>
+                    <p>Industries worked, with various verticals</p>
+                </div>
+                <div class="col-3" id="co-5">
+                    <h1>250k<span><img style="background-color: red; width: 40px; margin-left: 50px; border-radius: 50%;" src="https://img.icons8.com/?size=50&id=32292&format=png" alt=""></span></h1>
+                    <p> Followers on Various Social Media</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col"> 
+                    <div class="ani-1" style="margin-bottom: 5px;">
+                        <div class="p-3">Apply Now<br>
+                        <h5 class="h5-3">  Note : Appointment Confirmation Cannot Guarantee you Seat  </h5 >
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cond-1" style="margin-top: 100px;">
+            <h1>Program <span class="spa-1">Details</span> →</h1>
+        </div>
+        <div class="cond-1" style="text-align: center;  margin-top: 20px;">
+            <p >If this is something that excites you and its something you’ve been  looking for – we’d love to explore. Fill the form below so we get to know more about and can assess whether you’re the right fit for our cohort!</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-5" id="ro-1">
+                    <div style="margin: 70px 20px ; line-height: 40px;">
+                        <h2>What You Will Get :</h2>
+                        <ul>
+                            <li> Cohort Based Learning</li>
+                            <li> Everyday Live Q&A’s</li>
+                            <li>Expert Master Class</li>
+                            <li>Dedicated 1 To 1s</li>
+                            <li>Account Manager</li>
+                            <li>One To One With Sakthi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col" style="padding-top: 500px;"></div>
+                <div class="col-5" id="ro-2"> 
+                    <div style="margin: 70px 20px ; line-height: 100px;">
+                        <h2>Ready To Join? ✨</h2>
+                        <h4>Tamil Business Tribe Master Program</h4>
+                        <p style="line-height: normal;">FYI: We go through every application very carefully and handpick each cohort member so make sure you fill in the right (and most detailed) information so that we can get to know you better via the form.</p>
+                        <div class="ani-1" style="margin-bottom: 5px;">
+                            <div class="p-3">Apply Now<br>
+                            <h5 class="h5-3">  Note : Appointment Confirmation Cannot Guarantee you Seat  </h5 >
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cond-1" style="margin-top: 80px;">
+            <h1>Frequently Asked <span class="spa-1"> Questions</span></h1>
+        </div>
+        <ul style="margin-top: 20px; line-height: 50px; font-size: larger; list-style: none;" id="ul-1">
+            <li>What is session timing of recorded session</li>
+            <li> Will I be able implement</li>
+            <li>How many one to one </li>
+            <li> Will I be able to work wiht experts</li>
+            <li>How long is the course</li>
+
+        </ul>
+
+
+</body>
+</html> 
